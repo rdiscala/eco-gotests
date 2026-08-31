@@ -10,6 +10,15 @@ const (
 	// LabelPlannedReboot is the label for the planned-reboot test scenario.
 	LabelPlannedReboot = "planned-reboot"
 
+	// LabelWorkerRemoval is the label for the worker-removal test scenario.
+	LabelWorkerRemoval = "worker-removal"
+
+	// LabelWorkerReplacement is the label for the worker-replacement test scenario.
+	LabelWorkerReplacement = "worker-replacement"
+
+	// NHCPauseReason is the pause string inserted into NHC pauseRequests during intentional node operations.
+	NHCPauseReason = "intentional-node-maintenance"
+
 	// NHCResourceName is the name of the NodeHealthCheck CR.
 	NHCResourceName = "nhc-worker-self"
 

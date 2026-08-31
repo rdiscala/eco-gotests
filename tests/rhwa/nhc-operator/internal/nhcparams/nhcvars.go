@@ -74,4 +74,13 @@ var (
 
 	// UpgradePollingInterval is the polling interval for upgrade observation.
 	UpgradePollingInterval = 30 * time.Second
+
+	// NHCPauseObserveTimeout is how long to observe that NHC does not trigger remediation after pausing.
+	NHCPauseObserveTimeout = 3 * time.Minute
+
+	// NodeDeletionTimeout is how long to wait for a node object to be deleted from the cluster.
+	NodeDeletionTimeout = 5 * time.Minute
+
+	// MCPHealthTimeout is how long to wait for MachineConfigPool to reconcile after node changes.
+	MCPHealthTimeout = 5 * time.Minute
 )
